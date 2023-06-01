@@ -1,0 +1,11 @@
+###开发前的测试
+GET http://localhost:53010/consumer/hello
+
+<> 2023-04-16T221131.200.txt
+
+###开发前的测试
+POST {{consumer-service}}/consumer/hi?name=杨杨2
+
+<> 2023-04-16T221508.200.txt
+<> 2023-04-16T221503.200.txt
+<> 2023-04-16T221356.200.txt

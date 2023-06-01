@@ -1,0 +1,3 @@
+cn\itcast\wanxinp2p\gateway\GatewayServer.class
+cn\itcast\wanxinp2p\gateway\common\util\HttpUtil.class
+cn\itcast\wanxinp2p\gateway\config\ZuulConfig.class

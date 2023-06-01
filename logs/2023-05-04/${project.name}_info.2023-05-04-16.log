@@ -1,0 +1,5 @@
+[${project.name}][${env:SERVER_PORT}] 2023-05-09 23:11:25,819 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:850] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.10.27:53030 - Re-registering apps/ACCOUNT-SERVICE
+[${project.name}][${env:SERVER_PORT}] 2023-05-09 23:11:25,831 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:826] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.10.27:53030: registering service...
+[${project.name}][${env:SERVER_PORT}] 2023-05-09 23:11:25,923 INFO [http-nio-53000-exec-6][AbstractInstanceRegistry.java:266] - Registered instance ACCOUNT-SERVICE/account-service:192.168.10.27:53030 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2023-05-09 23:11:25,931 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:835] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.10.27:53030 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2023-05-09 23:11:26,451 INFO [http-nio-53000-exec-3][AbstractInstanceRegistry.java:266] - Registered instance ACCOUNT-SERVICE/account-service:192.168.10.27:53030 with status UP (replication=true)
