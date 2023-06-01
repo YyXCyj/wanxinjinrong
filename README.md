@@ -7,4 +7,4 @@
 风控管理等模块。项目采用先进的互联网技术进行研发，保证了P2P双方交易的安全性、快捷性及稳定
 性。
 
-![登陆图]([https://github.com/YyXCyj/seckill-system/blob/master/image/1.png](https://github.com/YyXCyj/wanxinjinrong/blob/master/api-test/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230601223042.png))
+![登陆图](https://github.com/YyXCyj/wanxinjinrong/blob/master/api-test/1111.png)
