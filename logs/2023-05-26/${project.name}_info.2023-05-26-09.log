@@ -1,0 +1,25 @@
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:11,367 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:12,298 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:15,798 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:25,807 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:35,198 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:35,822 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 14ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:35,964 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:41,391 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:42,283 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:45,830 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 8ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:00:55,836 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 6ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:05,221 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:05,846 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:05,973 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:11,385 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:12,304 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:15,859 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 13ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:25,874 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 14ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:35,209 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:35,880 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:35,975 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:41,381 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:42,308 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:45,890 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 10ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-26 10:01:55,898 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 7ms

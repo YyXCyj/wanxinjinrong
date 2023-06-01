@@ -1,0 +1,132 @@
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:00:05,231 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:00:35,244 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:01:05,238 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:01:35,218 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:02:05,256 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:02:20,637 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:02:35,233 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:03:05,228 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:03:35,221 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:04:05,220 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:04:35,225 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:05:05,232 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:05:35,229 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:06:05,225 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:06:35,255 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:07:05,231 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:07:20,643 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:07:35,249 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:08:05,217 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:08:35,248 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:09:05,252 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:09:35,212 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:10:05,223 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:10:35,217 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:11:05,214 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:11:35,299 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:12:05,233 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:12:20,657 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:12:35,229 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:13:05,231 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:13:35,234 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:14:05,215 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:14:35,246 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:15:05,246 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:15:35,240 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:16:05,253 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:16:35,245 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:17:05,256 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:17:20,666 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:17:35,238 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:18:05,233 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:18:35,251 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:19:05,206 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:19:35,240 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:20:05,227 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:20:35,231 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:21:05,244 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:21:35,408 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:22:05,244 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:22:20,675 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:22:35,245 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:23:05,202 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:23:35,237 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:24:05,230 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:24:35,228 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:25:05,232 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:25:35,211 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:26:05,214 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:26:35,233 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:27:05,223 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:27:20,682 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:27:35,207 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:28:05,263 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:28:35,205 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:29:05,210 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:29:35,230 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:30:05,248 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:30:35,216 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:31:05,324 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:31:35,258 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:32:05,209 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:32:20,685 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:32:35,248 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:33:05,216 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:33:35,229 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:34:05,246 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:34:35,232 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:35:05,211 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:35:35,209 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:36:05,230 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:36:35,221 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:37:05,212 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:37:20,686 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:37:35,236 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:38:05,228 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:38:35,230 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:39:05,219 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:39:35,215 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:40:05,227 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:40:35,206 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:41:05,222 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:41:35,234 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:42:05,216 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:42:20,691 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:42:35,230 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:43:05,215 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:43:35,240 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:44:05,338 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:44:35,243 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:45:05,238 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:45:35,218 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:46:05,211 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:46:35,319 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:47:05,237 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:47:20,705 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:47:35,228 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:48:05,250 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:48:35,241 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:49:05,216 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:49:35,233 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:50:05,224 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:50:35,226 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:51:05,232 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:51:35,208 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:52:05,215 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:52:20,713 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:52:35,219 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:53:05,229 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:53:35,205 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:54:05,250 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:54:35,201 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:55:05,205 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:55:35,214 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:56:05,230 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:56:35,223 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:57:05,229 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:57:20,728 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:57:35,244 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:58:05,236 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:58:35,230 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:59:05,222 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-29 16:59:35,226 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true

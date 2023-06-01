@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wanxinp2p-discover-server" />
+        <module name="wanxinp2p-consumer-service" />
+        <module name="wanxinp2p-account-service" />
+        <module name="wanxinp2p-common" />
+        <module name="wanxinp2p-gateway-server" />
+        <module name="wanxinp2p-api" />
+        <module name="wanxindepository" />
+        <module name="wanxinp2p-uaa-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MyTest" target="1.8" />
+      <module name="wanxindepository" target="1.8" />
+      <module name="wanxinp2p" target="1.8" />
+      <module name="wanxinp2p-account-service" target="1.8" />
+      <module name="wanxinp2p-api" target="1.8" />
+      <module name="wanxinp2p-common" target="1.8" />
+      <module name="wanxinp2p-consumer-service" target="1.8" />
+      <module name="wanxinp2p-content-search-service" target="1.8" />
+      <module name="wanxinp2p-depository-agent-service" target="1.8" />
+      <module name="wanxinp2p-discover-server" target="1.8" />
+      <module name="wanxinp2p-file-service" target="1.8" />
+      <module name="wanxinp2p-gateway-server" target="1.8" />
+      <module name="wanxinp2p-repayment-service" target="1.8" />
+      <module name="wanxinp2p-sms-service" target="1.8" />
+      <module name="wanxinp2p-transaction-service" target="1.8" />
+      <module name="wanxinp2p-uaa-server" target="1.8" />
+      <module name="wanxinp2p-uaa-service" target="1.8" />
+      <module name="wanxinp2p-uaa-service (1)" target="1.8" />
+      <module name="wanxinp2p-uaa-service (2)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MyTest" options="" />
+      <module name="wanxindepository" options="-parameters" />
+      <module name="wanxinp2p" options="" />
+      <module name="wanxinp2p-account-service" options="-parameters" />
+      <module name="wanxinp2p-api" options="-parameters" />
+      <module name="wanxinp2p-common" options="-parameters" />
+      <module name="wanxinp2p-consumer-service" options="-parameters" />
+      <module name="wanxinp2p-content-search-service" options="" />
+      <module name="wanxinp2p-depository-agent-service" options="" />
+      <module name="wanxinp2p-discover-server" options="-parameters" />
+      <module name="wanxinp2p-file-service" options="" />
+      <module name="wanxinp2p-gateway-server" options="-parameters" />
+      <module name="wanxinp2p-repayment-service" options="" />
+      <module name="wanxinp2p-sms-service" options="" />
+      <module name="wanxinp2p-transaction-service" options="" />
+      <module name="wanxinp2p-uaa-service" options="-parameters" />
+      <module name="wanxinp2p-uaa-service (2)" options="-parameters" />
+    </option>
+  </component>
+</project>

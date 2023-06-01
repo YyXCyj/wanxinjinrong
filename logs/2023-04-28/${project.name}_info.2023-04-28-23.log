@@ -1,0 +1,7 @@
+[${project.name}][${env:SERVER_PORT}] 2023-04-29 00:00:09,949 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-04-29 00:00:11,573 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-04-29 00:00:14,426 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 8ms
+[${project.name}][${env:SERVER_PORT}] 2023-04-29 00:00:15,998 INFO [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater][PeerAwareInstanceRegistryImpl.java:539] - Current renewal threshold is : 0
+[${project.name}][${env:SERVER_PORT}] 2023-04-29 00:00:19,073 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-04-29 00:00:24,436 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2023-04-29 00:00:34,439 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms

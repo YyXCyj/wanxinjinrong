@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-account-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-account-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-consumer-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-discover-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-discover-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-discover-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-gateway-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/说明.txt" charset="GBK" />
+  </component>
+</project>

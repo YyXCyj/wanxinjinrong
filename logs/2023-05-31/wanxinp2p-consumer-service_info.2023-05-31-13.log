@@ -1,0 +1,848 @@
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:27:49,522 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:27:50,598 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:19,512 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:20,580 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:31,266 ERROR [DiscoveryClient-HeartbeatExecutor-0][RedirectingEurekaHttpClient.java:91] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 more
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:31,267 ERROR [DiscoveryClient-CacheRefreshExecutor-0][RedirectingEurekaHttpClient.java:91] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 more
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:31,284 WARN [DiscoveryClient-HeartbeatExecutor-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:31,284 WARN [DiscoveryClient-CacheRefreshExecutor-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:35,354 ERROR [DiscoveryClient-CacheRefreshExecutor-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 31 more
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:35,356 WARN [DiscoveryClient-CacheRefreshExecutor-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:35,358 ERROR [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:972] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - was unable to refresh its cache! status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:35,369 ERROR [DiscoveryClient-HeartbeatExecutor-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 28 more
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:35,370 WARN [DiscoveryClient-HeartbeatExecutor-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:35,370 ERROR [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:860] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:37,072 INFO [Thread-74][EurekaServiceRegistry.java:65] - Unregistering application CONSUMER-SERVICE with eureka with status DOWN
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:37,072 WARN [Thread-74][DiscoveryClient.java:1303] - Saw local status change event StatusChangeEvent [timestamp=1685510917072, current=DOWN, previous=UP]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:37,073 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050: registering service...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:37,119 INFO [Thread-74][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:38,300 INFO [Thread-74][DruidDataSource.java:1885] - {dataSource-1} closing ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:38,326 INFO [Thread-74][DruidDataSource.java:1955] - {dataSource-1} closed
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:38,338 INFO [Thread-74][DisposableBeanAdapter.java:265] - Invocation of destroy method failed on bean with name 'rocketMQTemplate': java.lang.IllegalStateException: Shutdown in progress
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:38,338 INFO [Thread-74][DisposableBeanAdapter.java:347] - Destroy method 'shutdown' on bean with name 'defaultMQProducer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:38,339 INFO [Thread-74][DiscoveryClient.java:888] - Shutting down DiscoveryClient ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:41,137 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 31 more
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:41,138 WARN [DiscoveryClient-InstanceInfoReplicator-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:41,138 WARN [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:831] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:41,139 WARN [DiscoveryClient-InstanceInfoReplicator-0][InstanceInfoReplicator.java:125] - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:41,141 INFO [Thread-74][DiscoveryClient.java:922] - Unregistering ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:41,688 INFO [Thread-74][DiscoveryClient.java:924] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - deregister  status: 404
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:28:41,739 INFO [Thread-74][DiscoveryClient.java:911] - Completed shut down of DiscoveryClient
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:14,689 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to consumer-service by app.id property from System Property
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:14,698 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:14,792 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:14,802 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:34,036 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,174 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,178 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,217 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,357 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,491 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,725 INFO [main][GenericScope.java:294] - BeanFactory id=a745eec6-fb55-300e-8c84-b2dba31b4e3e
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,794 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,819 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.consumer.agent.AccountApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,853 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,871 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$6a6ea645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:35,898 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,014 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,017 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$9d6c16da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,021 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$4fb8d8f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,023 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$acfbee2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,028 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,030 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,035 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$319b3610] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,041 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,041 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$7f77b469] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,087 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,088 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,093 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,095 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:37,118 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,304 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,307 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,377 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$41d89749] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,413 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,427 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,441 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5df29a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,839 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53050 (http)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,858 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53050"]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,866 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,867 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:39,875 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\java\javaSE1.8\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\VMware\bin\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;E:\opencv_4.5.0\opencv_vs2019\install\x64\vc16\bin;C:\MinGW\bin;C:\Users\yy228\Anaconda3;C:\Users\yy228\Anaconda3\Library\mingw-w64\bin;C:\Users\yy228\Anaconda3\Library\usr\bin;C:\Users\yy228\Anaconda3\Library\bin;C:\Users\yy228\Anaconda3\Scripts;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.1\;D:\java\javaSE1.8\jdk1.8\bin;D:\java\javaSE1.8\jdk1.8\jre\bin;D:\apache-maven-3.6.0\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NetSarang\Xshell 7\;C:\Program Files (x86)\NetSarang\Xftp 7\;C:\Users\yy228\AppData\Local\Yarn\bin;C:\texlive\2022\bin\win32;C:\Program Files (x86)\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\nodejs\;D:\Microsoft VS Code\bin;D:\java\javaSE1.8\jdk1.8\bin;D:\java\javaSE1.8\jdk1.8\jre\bin;C:\Users\yy228\AppData\Local\Microsoft\WindowsApps;C:\Users\yy228\.dotnet\tools;C:\Program Files\Bandizip\;C:\Program Files\CMake\bin;C:\Program Files\JetBrains\PyCharm 2020.1.3\bin;;D:\mysql\mysql-5.7.19-winx64\bin;C:\Users\yy228\AppData\Roaming\npm;D:\nodejs\node_global;D:\datagrip\DataGrip 2022.2.2\bin;;C:\Users\yy228\AppData\Local\GitHubDesktop\bin;E:\JetBrains\IntelliJ IDEA 2022.1.1\bin;;D:\VSCode\Microsoft VS Code\bin;.]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:40,063 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:40,064 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 6012 ms
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:40,209 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:40,210 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:40,225 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5e3cb58e
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:40,375 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:40,770 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:41,504 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:41,504 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:43,477 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:43,583 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:43,607 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:43,607 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:43,750 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:45,077 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:45,123 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:45,265 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:45,265 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:45,404 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:45,405 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:45,723 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,104 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,104 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,104 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,104 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,104 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,104 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,104 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,329 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,332 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,335 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,339 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1685510986338 with initial instances count: 1
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,341 INFO [main][EurekaServiceRegistry.java:42] - Registering application CONSUMER-SERVICE with eureka with status UP
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,341 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1685510986341, current=UP, previous=STARTING]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,343 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,344 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050: registering service...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,350 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,384 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - registration status: 204
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,385 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,507 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53050"]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,525 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53050 (http) with context path '/consumer'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,526 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53050
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:46,528 INFO [main][StartupInfoLogger.java:59] - Started ConsumerService in 35.194 seconds (JVM running for 39.528)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:47,015 INFO [RMI TCP Connection(2)-192.168.101.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:47,016 INFO [RMI TCP Connection(2)-192.168.101.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:29:47,028 INFO [RMI TCP Connection(2)-192.168.101.1][FrameworkServlet.java:546] - Completed initialization in 12 ms
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:30:10,320 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:30:11,354 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:30:40,300 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:30:41,347 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:31:10,322 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:31:11,357 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:31:40,326 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:31:41,357 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:32:10,327 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:32:11,350 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:32:40,322 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:32:41,369 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:33:10,308 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:33:11,327 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:33:40,301 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:33:41,339 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:34:10,328 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:34:11,366 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:34:40,308 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:34:41,331 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:34:46,114 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:35:10,305 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:35:11,342 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:35:40,323 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:35:41,342 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:36:10,322 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:36:11,354 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:36:40,315 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:36:41,336 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:37:10,309 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:37:11,371 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:37:40,311 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:37:41,341 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:38:10,310 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:38:11,352 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:38:40,318 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:38:41,349 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:39:10,310 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:39:11,355 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:39:40,312 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:39:41,346 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:39:46,115 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:40:10,319 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:40:11,376 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:40:40,308 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:40:41,331 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:41:10,317 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:41:11,337 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:41:40,301 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:41:41,353 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:42:10,334 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:42:11,355 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:42:40,316 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:42:41,353 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:43:10,315 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:43:11,380 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:43:40,316 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:43:41,353 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:44:10,306 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:44:11,347 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:44:40,306 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:44:41,359 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:44:46,118 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:45:10,331 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:45:11,363 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:45:40,308 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:45:41,355 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:46:10,326 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:46:11,359 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:46:40,319 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:46:41,368 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:47:10,325 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:47:11,372 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:47:40,308 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:47:41,382 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:48:10,306 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:48:11,341 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:48:40,317 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:48:41,358 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:01,728 ERROR [http-nio-53050-exec-1][GlobalExceptionHandler.java:47] - 【系统异常】null
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:10,333 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:11,359 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:40,314 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:41,354 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:46,132 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:58,468 INFO [Thread-81][EurekaServiceRegistry.java:65] - Unregistering application CONSUMER-SERVICE with eureka with status DOWN
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:58,468 WARN [Thread-81][DiscoveryClient.java:1303] - Saw local status change event StatusChangeEvent [timestamp=1685512198468, current=DOWN, previous=UP]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:58,468 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050: registering service...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:58,472 INFO [Thread-81][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:58,483 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - registration status: 204
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:59,632 INFO [Thread-81][DruidDataSource.java:1885] - {dataSource-1} closing ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:59,643 INFO [Thread-81][DruidDataSource.java:1955] - {dataSource-1} closed
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:59,653 INFO [Thread-81][DisposableBeanAdapter.java:265] - Invocation of destroy method failed on bean with name 'rocketMQTemplate': java.lang.IllegalStateException: Shutdown in progress
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:59,653 INFO [Thread-81][DisposableBeanAdapter.java:347] - Destroy method 'shutdown' on bean with name 'defaultMQProducer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:49:59,653 INFO [Thread-81][DiscoveryClient.java:888] - Shutting down DiscoveryClient ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:02,668 INFO [Thread-81][DiscoveryClient.java:922] - Unregistering ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:02,690 INFO [Thread-81][DiscoveryClient.java:924] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - deregister  status: 200
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:02,712 INFO [Thread-81][DiscoveryClient.java:911] - Completed shut down of DiscoveryClient
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:09,411 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to consumer-service by app.id property from System Property
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:09,416 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:09,451 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:09,455 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:28,098 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,026 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,028 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,053 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,138 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,204 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,327 INFO [main][GenericScope.java:294] - BeanFactory id=a745eec6-fb55-300e-8c84-b2dba31b4e3e
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,347 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,359 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.consumer.agent.AccountApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,373 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,381 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$6c6b89ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,390 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,994 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:29,997 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$9f68fa42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,000 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$51b5bc5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,002 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$ccca24a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,006 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,008 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,012 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$33981978] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,016 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,017 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$817497d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,052 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,052 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,058 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,061 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:30,083 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:31,810 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:31,812 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:31,863 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$43d57ab1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:31,904 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:31,914 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:31,924 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5fef7dae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,195 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53050 (http)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,208 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53050"]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,214 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,215 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,220 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\java\javaSE1.8\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\VMware\bin\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;E:\opencv_4.5.0\opencv_vs2019\install\x64\vc16\bin;C:\MinGW\bin;C:\Users\yy228\Anaconda3;C:\Users\yy228\Anaconda3\Library\mingw-w64\bin;C:\Users\yy228\Anaconda3\Library\usr\bin;C:\Users\yy228\Anaconda3\Library\bin;C:\Users\yy228\Anaconda3\Scripts;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.1\;D:\java\javaSE1.8\jdk1.8\bin;D:\java\javaSE1.8\jdk1.8\jre\bin;D:\apache-maven-3.6.0\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NetSarang\Xshell 7\;C:\Program Files (x86)\NetSarang\Xftp 7\;C:\Users\yy228\AppData\Local\Yarn\bin;C:\texlive\2022\bin\win32;C:\Program Files (x86)\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\nodejs\;D:\Microsoft VS Code\bin;D:\java\javaSE1.8\jdk1.8\bin;D:\java\javaSE1.8\jdk1.8\jre\bin;C:\Users\yy228\AppData\Local\Microsoft\WindowsApps;C:\Users\yy228\.dotnet\tools;C:\Program Files\Bandizip\;C:\Program Files\CMake\bin;C:\Program Files\JetBrains\PyCharm 2020.1.3\bin;;D:\mysql\mysql-5.7.19-winx64\bin;C:\Users\yy228\AppData\Roaming\npm;D:\nodejs\node_global;D:\datagrip\DataGrip 2022.2.2\bin;;C:\Users\yy228\AppData\Local\GitHubDesktop\bin;E:\JetBrains\IntelliJ IDEA 2022.1.1\bin;;D:\VSCode\Microsoft VS Code\bin;.]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,352 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,352 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 4237 ms
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,466 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,467 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,478 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4247093b
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,567 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:32,821 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:34,001 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:34,001 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:34,671 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:34,744 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:34,761 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:34,762 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:34,863 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,031 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,070 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,199 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,199 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,333 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,334 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,626 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,992 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,992 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,993 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,993 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,993 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,993 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:36,993 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,173 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,176 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,179 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,183 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1685512237182 with initial instances count: 3
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,185 INFO [main][EurekaServiceRegistry.java:42] - Registering application CONSUMER-SERVICE with eureka with status UP
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,185 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1685512237185, current=UP, previous=STARTING]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,187 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,188 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050: registering service...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,194 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,228 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - registration status: 204
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,229 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,354 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53050"]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,373 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53050 (http) with context path '/consumer'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,374 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53050
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,376 INFO [main][StartupInfoLogger.java:59] - Started ConsumerService in 30.046 seconds (JVM running for 32.084)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,815 INFO [RMI TCP Connection(6)-192.168.101.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,816 INFO [RMI TCP Connection(6)-192.168.101.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:50:37,830 INFO [RMI TCP Connection(6)-192.168.101.1][FrameworkServlet.java:546] - Completed initialization in 14 ms
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:51:03,120 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:51:03,854 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:51:33,137 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:51:33,860 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:52:03,120 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:52:03,859 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:52:33,121 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:52:33,863 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:53:03,138 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:53:03,871 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:38,600 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:38,610 ERROR [http-nio-53050-exec-2][GlobalExceptionHandler.java:47] - 【系统异常】null
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:38,651 INFO [Thread-67][EurekaServiceRegistry.java:65] - Unregistering application CONSUMER-SERVICE with eureka with status DOWN
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:38,652 WARN [Thread-67][DiscoveryClient.java:1303] - Saw local status change event StatusChangeEvent [timestamp=1685512538652, current=DOWN, previous=UP]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:38,652 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050: registering service...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:38,656 INFO [Thread-67][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:38,672 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - registration status: 204
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:39,809 INFO [Thread-67][DruidDataSource.java:1885] - {dataSource-1} closing ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:39,816 INFO [Thread-67][DruidDataSource.java:1955] - {dataSource-1} closed
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:39,821 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:39,823 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:39,823 INFO [Thread-67][DisposableBeanAdapter.java:265] - Invocation of destroy method failed on bean with name 'rocketMQTemplate': java.lang.IllegalStateException: Shutdown in progress
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:39,824 INFO [Thread-67][DisposableBeanAdapter.java:347] - Destroy method 'shutdown' on bean with name 'defaultMQProducer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:39,824 INFO [Thread-67][DiscoveryClient.java:888] - Shutting down DiscoveryClient ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:42,828 INFO [Thread-67][DiscoveryClient.java:922] - Unregistering ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:42,845 INFO [Thread-67][DiscoveryClient.java:924] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - deregister  status: 200
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:42,851 INFO [Thread-67][DiscoveryClient.java:911] - Completed shut down of DiscoveryClient
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:56,127 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to consumer-service by app.id property from System Property
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:56,133 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:56,179 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:55:56,184 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:14,952 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:15,904 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:15,909 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:15,944 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,053 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,134 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,261 INFO [main][GenericScope.java:294] - BeanFactory id=a745eec6-fb55-300e-8c84-b2dba31b4e3e
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,281 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,293 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.consumer.agent.AccountApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,308 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,316 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$f4e83588] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,325 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,964 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,965 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$27e5a61d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,968 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$da326836] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,970 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$95494e25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,974 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,976 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,980 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$bc14c553] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,985 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:16,986 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$9f143ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:17,016 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:17,017 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:17,021 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:17,023 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:17,041 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,329 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,331 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,427 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc52268c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,462 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,478 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,498 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e86c2989] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,892 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53050 (http)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,906 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53050"]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,913 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,914 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:19,921 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\java\javaSE1.8\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\VMware\bin\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;E:\opencv_4.5.0\opencv_vs2019\install\x64\vc16\bin;C:\MinGW\bin;C:\Users\yy228\Anaconda3;C:\Users\yy228\Anaconda3\Library\mingw-w64\bin;C:\Users\yy228\Anaconda3\Library\usr\bin;C:\Users\yy228\Anaconda3\Library\bin;C:\Users\yy228\Anaconda3\Scripts;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.1\;D:\java\javaSE1.8\jdk1.8\bin;D:\java\javaSE1.8\jdk1.8\jre\bin;D:\apache-maven-3.6.0\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NetSarang\Xshell 7\;C:\Program Files (x86)\NetSarang\Xftp 7\;C:\Users\yy228\AppData\Local\Yarn\bin;C:\texlive\2022\bin\win32;C:\Program Files (x86)\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\nodejs\;D:\Microsoft VS Code\bin;D:\java\javaSE1.8\jdk1.8\bin;D:\java\javaSE1.8\jdk1.8\jre\bin;C:\Users\yy228\AppData\Local\Microsoft\WindowsApps;C:\Users\yy228\.dotnet\tools;C:\Program Files\Bandizip\;C:\Program Files\CMake\bin;C:\Program Files\JetBrains\PyCharm 2020.1.3\bin;;D:\mysql\mysql-5.7.19-winx64\bin;C:\Users\yy228\AppData\Roaming\npm;D:\nodejs\node_global;D:\datagrip\DataGrip 2022.2.2\bin;;C:\Users\yy228\AppData\Local\GitHubDesktop\bin;E:\JetBrains\IntelliJ IDEA 2022.1.1\bin;;D:\VSCode\Microsoft VS Code\bin;.]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:20,128 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:20,128 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 5161 ms
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:20,268 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:20,269 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:20,286 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@39685204
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:20,391 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:20,706 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:21,540 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:21,541 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:22,767 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:22,864 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:22,887 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:22,887 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:23,014 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:24,302 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:24,350 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:24,506 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:24,506 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:24,658 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:24,658 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:24,985 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,421 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,421 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,421 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,421 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,422 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,422 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,422 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,622 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,625 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,629 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,632 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1685512585631 with initial instances count: 3
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,634 INFO [main][EurekaServiceRegistry.java:42] - Registering application CONSUMER-SERVICE with eureka with status UP
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,635 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1685512585635, current=UP, previous=STARTING]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,637 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,638 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050: registering service...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,645 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,680 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - registration status: 204
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,682 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,815 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53050"]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,834 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53050 (http) with context path '/consumer'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,835 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53050
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:25,838 INFO [main][StartupInfoLogger.java:59] - Started ConsumerService in 33.473 seconds (JVM running for 36.64)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:26,315 INFO [RMI TCP Connection(3)-192.168.101.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:26,315 INFO [RMI TCP Connection(3)-192.168.101.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:26,329 INFO [RMI TCP Connection(3)-192.168.101.1][FrameworkServlet.java:546] - Completed initialization in 14 ms
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:50,194 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:51,356 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:56:55,525 ERROR [http-nio-53050-exec-3][GlobalExceptionHandler.java:47] - 【系统异常】Required String parameter 'jsonToken' is not present
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:20,164 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:21,391 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:37,557 INFO [Thread-74][EurekaServiceRegistry.java:65] - Unregistering application CONSUMER-SERVICE with eureka with status DOWN
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:37,558 WARN [Thread-74][DiscoveryClient.java:1303] - Saw local status change event StatusChangeEvent [timestamp=1685512657558, current=DOWN, previous=UP]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:37,558 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050: registering service...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:37,562 INFO [Thread-74][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:37,576 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - registration status: 204
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:38,699 INFO [Thread-74][DruidDataSource.java:1885] - {dataSource-1} closing ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:38,706 INFO [Thread-74][DruidDataSource.java:1955] - {dataSource-1} closed
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:38,713 INFO [Thread-74][DisposableBeanAdapter.java:265] - Invocation of destroy method failed on bean with name 'rocketMQTemplate': java.lang.IllegalStateException: Shutdown in progress
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:38,713 INFO [Thread-74][DisposableBeanAdapter.java:347] - Destroy method 'shutdown' on bean with name 'defaultMQProducer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:38,714 INFO [Thread-74][DiscoveryClient.java:888] - Shutting down DiscoveryClient ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:41,714 INFO [Thread-74][DiscoveryClient.java:922] - Unregistering ...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:41,732 INFO [Thread-74][DiscoveryClient.java:924] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - deregister  status: 200
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:41,737 INFO [Thread-74][DiscoveryClient.java:911] - Completed shut down of DiscoveryClient
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:51,129 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to consumer-service by app.id property from System Property
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:51,135 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:51,178 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:57:51,182 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:09,928 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,000 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,002 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,026 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,110 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,176 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,321 INFO [main][GenericScope.java:294] - BeanFactory id=a745eec6-fb55-300e-8c84-b2dba31b4e3e
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,345 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,359 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.consumer.agent.AccountApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,379 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,390 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$546a73ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:11,400 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,106 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,108 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$8767e45f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,111 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$39b4a678] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,113 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$f4cb8c67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,118 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,119 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,124 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$1b970395] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,128 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,129 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$697381ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,157 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,157 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,161 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,163 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:12,181 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:14,344 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:14,346 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:14,429 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2bd464ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:14,486 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:14,505 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:14,532 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$47ee67cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,322 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53050 (http)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,352 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53050"]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,367 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,369 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,383 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\java\javaSE1.8\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\VMware\bin\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;E:\opencv_4.5.0\opencv_vs2019\install\x64\vc16\bin;C:\MinGW\bin;C:\Users\yy228\Anaconda3;C:\Users\yy228\Anaconda3\Library\mingw-w64\bin;C:\Users\yy228\Anaconda3\Library\usr\bin;C:\Users\yy228\Anaconda3\Library\bin;C:\Users\yy228\Anaconda3\Scripts;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.1\;D:\java\javaSE1.8\jdk1.8\bin;D:\java\javaSE1.8\jdk1.8\jre\bin;D:\apache-maven-3.6.0\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NetSarang\Xshell 7\;C:\Program Files (x86)\NetSarang\Xftp 7\;C:\Users\yy228\AppData\Local\Yarn\bin;C:\texlive\2022\bin\win32;C:\Program Files (x86)\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\nodejs\;D:\Microsoft VS Code\bin;D:\java\javaSE1.8\jdk1.8\bin;D:\java\javaSE1.8\jdk1.8\jre\bin;C:\Users\yy228\AppData\Local\Microsoft\WindowsApps;C:\Users\yy228\.dotnet\tools;C:\Program Files\Bandizip\;C:\Program Files\CMake\bin;C:\Program Files\JetBrains\PyCharm 2020.1.3\bin;;D:\mysql\mysql-5.7.19-winx64\bin;C:\Users\yy228\AppData\Roaming\npm;D:\nodejs\node_global;D:\datagrip\DataGrip 2022.2.2\bin;;C:\Users\yy228\AppData\Local\GitHubDesktop\bin;E:\JetBrains\IntelliJ IDEA 2022.1.1\bin;;D:\VSCode\Microsoft VS Code\bin;.]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,647 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,647 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 5700 ms
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,822 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,823 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,840 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4bfe83d
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:15,979 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:16,335 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:16,642 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:16,642 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:18,718 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:18,839 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:18,868 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:18,868 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:19,032 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:21,333 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:21,407 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:21,681 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:21,682 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:21,998 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:21,999 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:22,818 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,634 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,635 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,636 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,637 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,638 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,638 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,639 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,981 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,986 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,991 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:23,998 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1685512703996 with initial instances count: 3
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,002 INFO [main][EurekaServiceRegistry.java:42] - Registering application CONSUMER-SERVICE with eureka with status UP
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,003 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1685512704003, current=UP, previous=STARTING]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,006 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,007 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050: registering service...
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,022 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,088 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:10.18.35.163:53050 - registration status: 204
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,103 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,389 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53050"]
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,418 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53050 (http) with context path '/consumer'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,420 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53050
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:24,423 INFO [main][StartupInfoLogger.java:59] - Started ConsumerService in 36.177 seconds (JVM running for 38.166)
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:25,117 INFO [RMI TCP Connection(7)-192.168.101.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:25,118 INFO [RMI TCP Connection(7)-192.168.101.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:25,132 INFO [RMI TCP Connection(7)-192.168.101.1][FrameworkServlet.java:546] - Completed initialization in 14 ms
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:45,324 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:58:46,405 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:59:15,289 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:59:16,370 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:59:45,291 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[wanxinp2p-consumer-service][${env:SERVER_PORT}] 2023-05-31 13:59:46,374 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true

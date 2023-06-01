@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wanxinp2p.iml" filepath="$PROJECT_DIR$/wanxinp2p.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wanxinp2p-account-service/wanxinp2p-account-service.iml" filepath="$PROJECT_DIR$/wanxinp2p-account-service/wanxinp2p-account-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wanxinp2p-api/wanxinp2p-api.iml" filepath="$PROJECT_DIR$/wanxinp2p-api/wanxinp2p-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wanxinp2p-common/wanxinp2p-common.iml" filepath="$PROJECT_DIR$/wanxinp2p-common/wanxinp2p-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wanxinp2p-consumer-service/wanxinp2p-consumer-service.iml" filepath="$PROJECT_DIR$/wanxinp2p-consumer-service/wanxinp2p-consumer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wanxinp2p-discover-server/wanxinp2p-discover-server.iml" filepath="$PROJECT_DIR$/wanxinp2p-discover-server/wanxinp2p-discover-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wanxinp2p-gateway-server/wanxinp2p-gateway-server.iml" filepath="$PROJECT_DIR$/wanxinp2p-gateway-server/wanxinp2p-gateway-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wanxinp2p-uaa-service/wanxinp2p-uaa-service.iml" filepath="$PROJECT_DIR$/wanxinp2p-uaa-service/wanxinp2p-uaa-service.iml" />
+    </modules>
+  </component>
+</project>

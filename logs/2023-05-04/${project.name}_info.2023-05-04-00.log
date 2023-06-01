@@ -1,0 +1,18 @@
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:36,396 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[127.0.0.1:9876] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:37,537 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[127.0.0.1:9876] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:38,387 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:38,836 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:40,698 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:41,323 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:43,137 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:43,726 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:45,306 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 38ms
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:45,309 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:611] - Evicting 1 items (expired=2, evictionLimit=1)
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:45,318 WARN [Eureka-EvictionTimer][AbstractInstanceRegistry.java:623] - DS: Registry: expired lease for GATEWAY-SERVER/gateway-server:192.168.10.27:53010
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:45,337 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:330] - Cancelled instance GATEWAY-SERVER/gateway-server:192.168.10.27:53010 (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:45,509 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:45,930 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:46,155 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:47,772 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:47,746 WARN [http-nio-53000-exec-3][AbstractInstanceRegistry.java:353] - DS: Registry: lease doesn't exist, registering resource: GATEWAY-SERVER - gateway-server:192.168.10.27:53010
+[${project.name}][${env:SERVER_PORT}] 2023-05-04 10:45:47,778 WARN [http-nio-53000-exec-3][InstanceResource.java:116] - Not Found (Renew): GATEWAY-SERVER - gateway-server:192.168.10.27:53010

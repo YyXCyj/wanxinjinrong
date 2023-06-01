@@ -1,0 +1,319 @@
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:01,738 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to consumer-service by app.id property from System Property
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:01,746 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:01,826 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:01,835 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:02,105 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:03,362 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:03,367 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:03,407 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:03,551 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:03,811 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:03,997 INFO [main][GenericScope.java:294] - BeanFactory id=7ab040c1-00ae-31a4-99b3-5df7d4cf1eb0
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,043 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,106 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$e8b3051f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,126 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,295 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,298 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$1bb075b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,303 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$cdfd37cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,306 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$89141dbc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,312 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,315 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,321 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$afdf94ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,328 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,330 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$fdbc1343] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,370 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,371 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,378 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,383 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,414 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,946 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:04,950 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,053 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dc36f920] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,511 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53050 (http)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,538 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53050"]
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,553 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,554 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,569 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\MySQL5.7.26\bin;C:\Program Files (x86)\NetSarang\;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\erl9.3\bin;C:\Program Files\Java\jdk1.8.0_131\bin;%C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\apache-maven-3.1.1\bin;C:\Users\xu\AppData\Roaming\npm;.]
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,835 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,836 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 3704 ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,982 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:05,983 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:06,002 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@28ee0a3c
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:06,135 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:06,135 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:06,989 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:06,990 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:07,243 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:08,155 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:08,308 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:08,370 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:08,672 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:08,672 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:08,892 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:08,892 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,413 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,515 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,595 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,595 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,596 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,596 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,597 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,597 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,598 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,910 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,913 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,919 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,924 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1563158409922 with initial instances count: 0
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,926 INFO [main][EurekaServiceRegistry.java:42] - Registering application CONSUMER-SERVICE with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,927 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1563158409927, current=UP, previous=STARTING]
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,931 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service\:172.16.0.126\:53050: registering service...
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,956 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53050"]
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,997 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53050 (http) with context path '/consumer'
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:09,999 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53050
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:10,004 INFO [main][StartupInfoLogger.java:59] - Started ConsumerService in 10.222 seconds (JVM running for 13.412)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:10,077 INFO [http-nio-53000-exec-2][AbstractInstanceRegistry.java:266] - Registered instance CONSUMER-SERVICE/consumer-service\:172.16.0.126\:53050 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:10,083 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service\:172.16.0.126\:53050 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:10,551 INFO [RMI TCP Connection(3)-172.16.0.126][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:10,552 INFO [RMI TCP Connection(3)-172.16.0.126][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:10,570 INFO [RMI TCP Connection(3)-172.16.0.126][FrameworkServlet.java:546] - Completed initialization in 18 ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:10,745 INFO [http-nio-53000-exec-3][AbstractInstanceRegistry.java:266] - Registered instance CONSUMER-SERVICE/consumer-service\:172.16.0.126\:53050 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:19,413 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:29,414 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:35,818 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:35,962 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,415 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,917 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,918 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,918 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,919 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,920 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,921 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:964] - Application version is -1: false
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,921 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,958 ERROR [DiscoveryClient-HeartbeatExecutor-0][ClientResponse.java:625] - A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,958 ERROR [DiscoveryClient-HeartbeatExecutor-0][ClientResponse.java:627] - The registered message body readers compatible with the MIME media type are:
+*/* ->
+  com.sun.jersey.core.impl.provider.entity.FormProvider
+  com.sun.jersey.core.impl.provider.entity.StringProvider
+  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+  com.sun.jersey.core.impl.provider.entity.FileProvider
+  com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+  com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.ReaderProvider
+  com.sun.jersey.core.impl.provider.entity.DocumentProvider
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader
+  com.alibaba.fastjson.support.jaxrs.FastJsonProvider
+  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General
+  com.sun.jersey.core.impl.provider.entity.EntityHolderReader
+
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,959 ERROR [DiscoveryClient-HeartbeatExecutor-0][RedirectingEurekaHttpClient.java:91] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+	at com.sun.jersey.api.client.ClientResponse.getEntity(ClientResponse.java:630)
+	at com.sun.jersey.api.client.ClientResponse.getEntity(ClientResponse.java:586)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:105)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,976 WARN [DiscoveryClient-HeartbeatExecutor-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,983 ERROR [DiscoveryClient-HeartbeatExecutor-0][ClientResponse.java:625] - A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,983 ERROR [DiscoveryClient-HeartbeatExecutor-0][ClientResponse.java:627] - The registered message body readers compatible with the MIME media type are:
+*/* ->
+  com.sun.jersey.core.impl.provider.entity.FormProvider
+  com.sun.jersey.core.impl.provider.entity.StringProvider
+  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+  com.sun.jersey.core.impl.provider.entity.FileProvider
+  com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+  com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.ReaderProvider
+  com.sun.jersey.core.impl.provider.entity.DocumentProvider
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader
+  com.alibaba.fastjson.support.jaxrs.FastJsonProvider
+  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General
+  com.sun.jersey.core.impl.provider.entity.EntityHolderReader
+
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,984 ERROR [DiscoveryClient-HeartbeatExecutor-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+	at com.sun.jersey.api.client.ClientResponse.getEntity(ClientResponse.java:630)
+	at com.sun.jersey.api.client.ClientResponse.getEntity(ClientResponse.java:586)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:105)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,985 WARN [DiscoveryClient-HeartbeatExecutor-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:39,986 ERROR [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:860] - DiscoveryClient_CONSUMER-SERVICE/consumer-service\:172.16.0.126\:53050 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:40,026 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:49,415 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:40:59,416 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:41:09,416 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:41:19,417 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:41:29,418 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:41:39,419 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:41:49,541 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 123ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:41:49,545 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:611] - Evicting 1 items (expired=1, evictionLimit=1)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:41:49,551 WARN [Eureka-EvictionTimer][AbstractInstanceRegistry.java:623] - DS: Registry: expired lease for CONSUMER-SERVICE/consumer-service\:172.16.0.126\:53050
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:41:49,553 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:330] - Cancelled instance CONSUMER-SERVICE/consumer-service\:172.16.0.126\:53050 (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:41:59,542 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:42:09,542 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:42:19,542 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:42:29,542 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:42:39,543 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:42:49,543 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:42:59,544 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:43:09,544 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:43:19,544 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:43:29,545 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:43:39,545 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:43:49,545 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:43:59,545 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:44:09,546 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:44:19,546 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:44:29,547 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:44:39,547 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:44:49,548 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:44:59,549 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:45:09,549 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:45:19,549 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:45:29,550 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:45:39,550 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:45:49,551 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:45:59,552 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:46:09,552 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:46:19,553 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:46:29,553 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:46:39,553 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:46:49,553 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:46:59,553 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:47:09,554 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:47:19,555 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:47:29,555 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:47:39,555 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:47:49,556 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:47:59,557 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:48:09,557 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:48:19,558 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:48:29,558 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:48:39,558 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:48:49,559 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:48:59,559 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:49:09,560 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:49:19,560 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:49:29,561 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:49:39,562 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:49:49,562 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:49:59,562 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:50:09,562 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:50:19,562 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:50:29,563 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:50:39,564 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:50:49,564 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:50:59,564 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:51:09,564 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:51:19,564 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:51:29,564 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:51:39,567 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:51:49,568 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:51:59,569 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:52:09,569 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:52:19,569 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:52:29,570 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:52:39,570 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:52:49,571 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:52:59,571 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:53:09,572 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:53:19,225 INFO [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater][PeerAwareInstanceRegistryImpl.java:539] - Current renewal threshold is : 0
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:53:19,572 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:53:29,572 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:53:39,573 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:53:49,573 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:53:59,573 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:54:09,574 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:54:19,574 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:54:29,575 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:54:39,576 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:54:49,577 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:54:59,577 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:55:09,577 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:55:19,578 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:55:29,579 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:55:39,579 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:55:49,579 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:55:59,579 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:56:09,580 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:56:19,580 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:56:29,581 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:56:39,581 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:56:49,581 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:56:59,581 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:57:09,582 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:57:19,582 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:57:29,582 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:57:39,583 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:57:49,583 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:57:59,584 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:58:09,584 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:58:19,584 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:58:29,584 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:58:39,584 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:58:49,584 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:58:59,585 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:59:09,585 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:59:19,585 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:59:29,586 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:59:39,586 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:59:49,587 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 10:59:59,588 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
